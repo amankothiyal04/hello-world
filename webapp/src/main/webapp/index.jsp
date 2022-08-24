@@ -1,247 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> HomePage</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-    body {
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    /* CSS for header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f5f5f5;
-    }
-
-    .header .logo {
-      font-size: 25px;
-      font-family: 'Sriracha', cursive;
-      color: #000;
-      text-decoration: none;
-      margin-left: 30px;
-    }
-
-    .nav-items {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #f5f5f5;
-      margin-right: 20px;
-    }
-
-    .nav-items a {
-      text-decoration: none;
-      color: #000;
-      padding: 35px 20px;
-    }
-
-    /* CSS for main element */
-    .intro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 520px;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .intro h1 {
-      font-family: sans-serif;
-      font-size: 60px;
-      color: #fff;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    .intro p {
-      font-size: 20px;
-      color: #d1d1d1;
-      text-transform: uppercase;
-      margin: 20px 0;
-    }
-
-    .intro button {
-      background-color: #5edaf0;
-      color: #000;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
-    }
-
-    .achievements {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 80px;
-    }
-
-    .achievements .work {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-    }
-
-    .achievements .work i {
-      width: fit-content;
-      font-size: 50px;
-      color: #333333;
-      border-radius: 50%;
-      border: 2px solid #333333;
-      padding: 12px;
-    }
-
-    .achievements .work .work-heading {
-      font-size: 20px;
-      color: #333333;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-
-    .achievements .work .work-text {
-      font-size: 15px;
-      color: #585858;
-      margin: 10px 0;
-    }
-
-    .about-me {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 80px;
-      border-top: 2px solid #eeeeee;
-    }
-
-    .about-me img {
-      width: 500px;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .about-me-text h2 {
-      font-size: 30px;
-      color: #333333;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    .about-me-text p {
-      font-size: 15px;
-      color: #585858;
-      margin: 10px 0;
-    }
-
-    /* CSS for footer */
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #302f49;
-      padding: 40px 80px;
-    }
-
-    .footer .copy {
-      color: #fff;
-    }
-
-    .bottom-links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 40px 0;
-    }
-
-    .bottom-links .links {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-    }
-
-    .bottom-links .links span {
-      font-size: 20px;
-      color: #fff;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-
-    .bottom-links .links a {
-      text-decoration: none;
-      color: #a1a1a1;
-      padding: 10px 20px;
-    }
-  </style>
-</head>
-
-<body>
-  <header class="header">
-    <a href="#" class="logo">Developer</a>
-    <nav class="nav-items">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <div class="Intro">
-      <h1>A Web Developer</h1>
-      <p>I am a web developer and I love to create websites.</p>
-      <button>Learn More</button>
-    </div>
-    <div class="achievements">
-      <div class="work">
-        <i class="fas fa-atom"></i>
-        <p class="work-heading">Projects</p>
-        <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
-      </div>
-      <div class="work">
-        <i class="fas fa-skiing"></i>
-        <p class="work-heading">Skills</p>
-        <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
-      </div>
-    </div>
-      <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="me">
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="copy">&copy; 2022 Developer</div>
-    <div class="bottom-links">
-      <div class="links">
-        <span>More Info</span>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="links">
-        <span>Social Links</span>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
-</body>
-
-</html>
+<! DOCTYPE html>  
+<html>  
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<meta charset="UTF-8">    
+<title> Book Order Form template Example </title>     
+ </head>  
+<style>  
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');  
+body {  
+  font-family: 'Roboto Condensed', sans-serif;  
+  color: #262626;  
+  margin: 5% 0;  
+}  
+.container {  
+  width: 100%;  
+  padding-right: 15px;  
+  padding-left: 15px;  
+  margin-right: auto;  
+  margin-left: auto;  
+}  
+@media (min-width: 1200px)  
+{  
+  .container {  
+    max-width: 1140px;  
+  }  
+}  
+.d-flex {  
+  display: flex;  
+  flex-direction: row;  
+  background: #f6f6f6;  
+  border-radius: 0 0 5px 5px;  
+  padding: 25px;  
+}  
+form {  
+  flex: 4;  
+}  
+.Yorder {  
+  flex: 2;  
+}  
+.title {  
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));  
+  background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);  
+  background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);  
+  background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);  
+  background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);  
+  border-radius: 5px 5px 0 0 ;  
+  padding: 20px;  
+  color: #f6f6f6;  
+}  
+h2 {  
+  margin: 0;  
+  padding-left: 15px;   
+}  
+.required {  
+  color: red;  
+}  
+label {  
+  display: block;  
+  margin: 15px;  
+}  
+table {  
+  display: block;  
+  margin: 15px;  
+}  
+label>span {  
+  float: left;  
+  width: 25%;  
+  margin-top: 12px;  
+  padding-right: 10px;  
+}  
+input[type="email"]  
+{  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+select  
+{  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+input[type="text"] {  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+input[type="tel"]   
+{  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+select {  
+  width: 72%;  
+  height: 45px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+}  
+.Yorder {  
+  margin-top: 15px;  
+  height: 600px;  
+  padding: 20px;  
+  border: 1px solid #dadada;  
+}  
+table {  
+  margin: 0;  
+  padding: 0;  
+}  
+th {  
+  border-bottom: 1px solid #dadada;  
+  padding: 10px 0;  
+}  
+tr>td:nth-child(1) {  
+  text-align: left;  
+  color: #2d2d2a;  
+}  
+tr>td:nth-child(2) {  
+  text-align: right;  
+  color: #52ad9c;  
+}  
+td {  
+  border-bottom: 1px solid #dadada;  
+  padding: 25px 25px 25px 0;  
+}  
+p {  
+  display: block;  
+  color: #888;  
+  margin: 0;  
+  padding-left: 25px;  
+}  
+.Yorder>div {  
+  padding: 15px 0;   
+}  
+button {  
+  width: 100%;  
+  margin-top: 10px;  
+  padding: 10px;  
+  border: none;  
+  border-radius: 30px;  
+  background: #52ad9c;  
+  color: #fff;  
+  font-size: 15px;  
+  font-weight: bold;  
+}  
+button:hover {  
+  cursor: pointer;  
+  background: #428a7d;  
+}  
+</style>  
+<body>  
+<div class="container">  
+  <div class="title">  
+      <h2> Book Order Form template Example </h2>  
+  </div>  
+<div class="d-flex">  
+  <form action="" method="">  
+    <label>  
+      <span class="fname"> First Name <span class="required"> * </span></span>  
+      <input type="text" name="fname">  
+    </label>  
+    <label>  
+      <span class="lname"> Last Name <span class="required"> * </span> </span>  
+      <input type="text" name="lname">  
+    </label>  
+    <label>  
+      <span> Company Name </span>  
+      <input type="text" name="cn">  
+    </label>  
+    <label>  
+      <span>Country <span class="required">*</span></span>  
+      <select name="selection">  
+        <option value="select"> Select a country... </option>  
+        <option value="AFG">Afghanistan</option>  
+        <option value="ALA">?land Islands</option>  
+        <option value="ALB">Albania</option>  
+        <option value="DZA">Algeria</option>  
+        <option value="ASM">American Samoa</option>  
+        <option value="AND">Andorra</option>  
+        <option value="BOL">Bolivia</option>  
+        <option value="BES">Bonaire</option>  
+        <option value="BIH">Bosnia</option>  
+        <option value="BWA">Botswana</option>  
+        <option value="BVT">Bouvet Island</option>  
+        <option value="BRA">Brazil</option>  
+        <option value="CUB">Cuba</option>  
+        <option value="CUW">Cura?ao</option>  
+        <option value="CYP">Cyprus</option>  
+        <option value="CZE">Czech Republic</option>  
+        <option value="EST">Estonia</option>  
+        <option value="ETH">Ethiopia</option>  
+        <option value="FLK">Falkland Islands (Malvinas)</option>  
+        <option value="LTU">Lithuania</option>  
+        <option value="LUX">Luxembourg</option>  
+        <option value="MAC">Macao</option>  
+        <option value="MKD">Macedonia, the former Yugoslav Republic of</option>  
+        <option value="MDG">Madagascar</option>  
+        <option value="MCO">Monaco</option>  
+        <option value="MNG">Mongolia</option>  
+        <option value="MNE">Montenegro</option>  
+        <option value="MSR">Montserrat</option>  
+        <option value="MAR">Morocco</option>  
+        <option value="NPL">Nepal</option>  
+        <option value="BLM">Saint Barth?lemy</option>  
+        <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>  
+        <option value="KNA">Saint Kitts and Nevis</option>  
+        <option value="LCA">Saint Lucia</option>  
+        <option value="MAF">Saint Martin (French part)</option>  
+        <option value="SPM">Saint Pierre and Miquelon</option>  
+        <option value="VCT">Saint Vincent and the Grenadines</option>  
+        <option value="VNM">Viet Nam</option>  
+        <option value="VGB">Virgin Islands, British</option>  
+        <option value="VIR">Virgin Islands, U.S.</option>  
+        <option value="WLF">Wallis and Futuna</option>  
+        <option value="ESH">Western Sahara</option>  
+        <option value="YEM">Yemen</option>  
+        <option value="ZMB">Zambia</option>  
+        <option value="ZWE">Zimbabwe</option>  
+      </select>  
+    </label>  
+    <label>  
+      <span> Address <span class="required"> * </span></span>  
+      <input type="text" name="houseadd" placeholder="House number and street name" required>  
+    </label>  
+    <label>  
+      <span> </span>  
+      <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">  
+    </label>  
+    <label>  
+      <span> Town / City <span class="required">*</span></span>  
+      <input type="text" name="city">   
+    </label>  
+    <label>  
+      <span> State / County <span class="required">*</span></span>  
+      <input type="text" name="city">   
+    </label>  
+    <label>  
+      <span> Postcode / ZIP <span class="required">*</span></span>  
+      <input type="text" name="city">   
+    </label>  
+    <label>  
+      <span> Phone Number <span class="required">*</span></span>  
+      <input type="tel" name="city">   
+    </label>  
+    <label>  
+      <span> Email Address <span class="required">*</span></span>  
+      <input type="email" name="city">   
+    </label>  
+  </form>  
+  <div class="Yorder">  
+    <table>  
+      <tr>  
+        <th colspan="2"> Your order </th>  
+      </tr>  
+      <tr>  
+        <td> Product Name x 2(Qty) </td>  
+        <td> $8.00 </td>  
+      </tr>  
+      <tr>  
+        <td> Subtotal </td>  
+        <td> $8.00 </td>  
+      </tr>  
+      <tr>  
+        <td> Shipping </td>  
+        <td> Free shipping </td>  
+      </tr>  
+    </table><br>  
+    <div>  
+      <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer  
+    </div>  
+    <p>  
+        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.  
+    </p>  
+    <div>  
+      <input type="radio" name="dbt" value="cd"> Cash on Delivery  
+    </div>  
+    <div>  
+      <input type="radio" name="dbt" value="cd"> Paypal <span>  
+      </span>  
+    </div>  
+    <button type="button"> Place Order </button>  
+  </div>  
+ </div>  
+</div>  
+</body>  
+</html>  
