@@ -1,298 +1,289 @@
-<! DOCTYPE html>  
-<html>  
-<meta name="viewport" content="width=device-width, initial-scale=1">    
-<meta charset="UTF-8">    
-<title> Book Order Form template Example </title>     
- </head>  
-<style>  
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');  
-body {  
-  font-family: 'Roboto Condensed', sans-serif;  
-  color: #262626;  
-  margin: 5% 0;  
-}  
-.container {  
-  width: 100%;  
-  padding-right: 15px;  
-  padding-left: 15px;  
-  margin-right: auto;  
-  margin-left: auto;  
-}  
-@media (min-width: 1200px)  
-{  
-  .container {  
-    max-width: 1140px;  
-  }  
-}  
-.d-flex {  
-  display: flex;  
-  flex-direction: row;  
-  background: #f6f6f6;  
-  border-radius: 0 0 5px 5px;  
-  padding: 25px;  
-}  
-form {  
-  flex: 4;  
-}  
-.Yorder {  
-  flex: 2;  
-}  
-.title {  
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));  
-  background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);  
-  background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);  
-  background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);  
-  background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);  
-  border-radius: 5px 5px 0 0 ;  
-  padding: 20px;  
-  color: #f6f6f6;  
-}  
-h2 {  
-  margin: 0;  
-  padding-left: 15px;   
-}  
-.required {  
-  color: red;  
-}  
-label {  
-  display: block;  
-  margin: 15px;  
-}  
-table {  
-  display: block;  
-  margin: 15px;  
-}  
-label>span {  
-  float: left;  
-  width: 25%;  
-  margin-top: 12px;  
-  padding-right: 10px;  
-}  
-input[type="email"]  
-{  
-  width: 70%;  
-  height: 30px;  
-  padding: 5px 10px;  
-  margin-bottom: 10px;  
-  border: 1px solid #dadada;  
-  color: #888;  
-}  
-select  
-{  
-  width: 70%;  
-  height: 30px;  
-  padding: 5px 10px;  
-  margin-bottom: 10px;  
-  border: 1px solid #dadada;  
-  color: #888;  
-}  
-input[type="text"] {  
-  width: 70%;  
-  height: 30px;  
-  padding: 5px 10px;  
-  margin-bottom: 10px;  
-  border: 1px solid #dadada;  
-  color: #888;  
-}  
-input[type="tel"]   
-{  
-  width: 70%;  
-  height: 30px;  
-  padding: 5px 10px;  
-  margin-bottom: 10px;  
-  border: 1px solid #dadada;  
-  color: #888;  
-}  
-select {  
-  width: 72%;  
-  height: 45px;  
-  padding: 5px 10px;  
-  margin-bottom: 10px;  
-}  
-.Yorder {  
-  margin-top: 15px;  
-  height: 600px;  
-  padding: 20px;  
-  border: 1px solid #dadada;  
-}  
-table {  
-  margin: 0;  
-  padding: 0;  
-}  
-th {  
-  border-bottom: 1px solid #dadada;  
-  padding: 10px 0;  
-}  
-tr>td:nth-child(1) {  
-  text-align: left;  
-  color: #2d2d2a;  
-}  
-tr>td:nth-child(2) {  
-  text-align: right;  
-  color: #52ad9c;  
-}  
-td {  
-  border-bottom: 1px solid #dadada;  
-  padding: 25px 25px 25px 0;  
-}  
-p {  
-  display: block;  
-  color: #888;  
-  margin: 0;  
-  padding-left: 25px;  
-}  
-.Yorder>div {  
-  padding: 15px 0;   
-}  
-button {  
-  width: 100%;  
-  margin-top: 10px;  
-  padding: 10px;  
-  border: none;  
-  border-radius: 30px;  
-  background: #52ad9c;  
-  color: #fff;  
-  font-size: 15px;  
-  font-weight: bold;  
-}  
-button:hover {  
-  cursor: pointer;  
-  background: #428a7d;  
-}  
-</style>  
-<body>  
-<div class="container">  
-  <div class="title">  
-      <h2> Book Order Form template Example </h2>  
-  </div>  
-<div class="d-flex">  
-  <form action="" method="">  
-    <label>  
-      <span class="fname"> First Name <span class="required"> * </span></span>  
-      <input type="text" name="fname">  
-    </label>  
-    <label>  
-      <span class="lname"> Last Name <span class="required"> * </span> </span>  
-      <input type="text" name="lname">  
-    </label>  
-    <label>  
-      <span> Company Name </span>  
-      <input type="text" name="cn">  
-    </label>  
-    <label>  
-      <span>Country <span class="required">*</span></span>  
-      <select name="selection">  
-        <option value="select"> Select a country... </option>  
-        <option value="AFG">Afghanistan</option>  
-        <option value="ALA">?land Islands</option>  
-        <option value="ALB">Albania</option>  
-        <option value="DZA">Algeria</option>  
-        <option value="ASM">American Samoa</option>  
-        <option value="AND">Andorra</option>  
-        <option value="BOL">Bolivia</option>  
-        <option value="BES">Bonaire</option>  
-        <option value="BIH">Bosnia</option>  
-        <option value="BWA">Botswana</option>  
-        <option value="BVT">Bouvet Island</option>  
-        <option value="BRA">Brazil</option>  
-        <option value="CUB">Cuba</option>  
-        <option value="CUW">Cura?ao</option>  
-        <option value="CYP">Cyprus</option>  
-        <option value="CZE">Czech Republic</option>  
-        <option value="EST">Estonia</option>  
-        <option value="ETH">Ethiopia</option>  
-        <option value="FLK">Falkland Islands (Malvinas)</option>  
-        <option value="LTU">Lithuania</option>  
-        <option value="LUX">Luxembourg</option>  
-        <option value="MAC">Macao</option>  
-        <option value="MKD">Macedonia, the former Yugoslav Republic of</option>  
-        <option value="MDG">Madagascar</option>  
-        <option value="MCO">Monaco</option>  
-        <option value="MNG">Mongolia</option>  
-        <option value="MNE">Montenegro</option>  
-        <option value="MSR">Montserrat</option>  
-        <option value="MAR">Morocco</option>  
-        <option value="NPL">Nepal</option>  
-        <option value="BLM">Saint Barth?lemy</option>  
-        <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>  
-        <option value="KNA">Saint Kitts and Nevis</option>  
-        <option value="LCA">Saint Lucia</option>  
-        <option value="MAF">Saint Martin (French part)</option>  
-        <option value="SPM">Saint Pierre and Miquelon</option>  
-        <option value="VCT">Saint Vincent and the Grenadines</option>  
-        <option value="VNM">Viet Nam</option>  
-        <option value="VGB">Virgin Islands, British</option>  
-        <option value="VIR">Virgin Islands, U.S.</option>  
-        <option value="WLF">Wallis and Futuna</option>  
-        <option value="ESH">Western Sahara</option>  
-        <option value="YEM">Yemen</option>  
-        <option value="ZMB">Zambia</option>  
-        <option value="ZWE">Zimbabwe</option>  
-      </select>  
-    </label>  
-    <label>  
-      <span> Address <span class="required"> * </span></span>  
-      <input type="text" name="houseadd" placeholder="House number and street name" required>  
-    </label>  
-    <label>  
-      <span> </span>  
-      <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">  
-    </label>  
-    <label>  
-      <span> Town / City <span class="required">*</span></span>  
-      <input type="text" name="city">   
-    </label>  
-    <label>  
-      <span> State / County <span class="required">*</span></span>  
-      <input type="text" name="city">   
-    </label>  
-    <label>  
-      <span> Postcode / ZIP <span class="required">*</span></span>  
-      <input type="text" name="city">   
-    </label>  
-    <label>  
-      <span> Phone Number <span class="required">*</span></span>  
-      <input type="tel" name="city">   
-    </label>  
-    <label>  
-      <span> Email Address <span class="required">*</span></span>  
-      <input type="email" name="city">   
-    </label>  
-  </form>  
-  <div class="Yorder">  
-    <table>  
-      <tr>  
-        <th colspan="2"> Your order </th>  
-      </tr>  
-      <tr>  
-        <td> Product Name x 2(Qty) </td>  
-        <td> $8.00 </td>  
-      </tr>  
-      <tr>  
-        <td> Subtotal </td>  
-        <td> $8.00 </td>  
-      </tr>  
-      <tr>  
-        <td> Shipping </td>  
-        <td> Free shipping </td>  
-      </tr>  
-    </table><br>  
-    <div>  
-      <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer  
-    </div>  
-    <p>  
-        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.  
-    </p>  
-    <div>  
-      <input type="radio" name="dbt" value="cd"> Cash on Delivery  
-    </div>  
-    <div>  
-      <input type="radio" name="dbt" value="cd"> Paypal <span>  
-      </span>  
-    </div>  
-    <button type="button"> Place Order </button>  
-  </div>  
- </div>  
-</div>  
-</body>  
-</html>  
+
+
+<!DOCTYPE html>
+
+<html>
+
+​
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <link rel="shortcut icon" href="https://www.cafecoffeeday.com/sites/default/files/64x64-CCD_6_0.png" type="image/png" />
+
+    <meta name="description" content="Find the best place to hang out with friends. Visit Café Coffee Day and enjoy hot coffees, cold coffees, snacks and more. CCD is the best place to spend time with companions." />
+
+    <meta name="keywords" content="coffee shops, ccd, coffee day, coffee shop, cafe restaurant, coffee restaurant" />
+
+    <meta name="generator" content="Drupal 7 (http://drupal.org)" />
+
+    <link rel="canonical" href="https://www.cafecoffeeday.com/" />
+
+    <link rel="shortlink" href="https://www.cafecoffeeday.com/node/769" />
+
+    <meta property="og:site_name" content="Cafe Coffee Day – India&#039;s favourite Coffee Shop &amp; hangout place" />
+
+    <meta property="og:url" content="https://www.cafecoffeeday.com/" />
+
+    <meta property="og:type" content="article" />
+
+    <meta property="og:title" content="Café Coffee Day | A Lot Can Happen Over Coffee" />
+
+    <meta property="og:description" content="Your favourite hangout destination for coffee and conversations. Head to a CCD nearby for Hot Coffees, Cold Coffees, Sandwiches, Pizzas, Desserts and more!" />
+
+    <meta property="og:updated_time" content="2019-08-27T15:17:47+05:30" />
+
+    <meta property="og:image:url" content="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/socialshare/Fb-share.png" />
+
+    <meta name="twitter:title" content="Café Coffee Day | A Lot Can Happen Over Coffee" />
+
+    <meta name="twitter:description" content="Your favourite hangout destination for coffee and conversations. Head to a CCD nearby for Hot Coffees, Cold Coffees, Sandwiches, Pizzas, Desserts and more!" />
+
+    <meta name="twitter:image" content="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/socialshare/tw-share.png" />
+
+    <meta property="article:published_time" content="2016-09-12T11:13:07+05:30" />
+
+    <meta property="article:modified_time" content="2019-08-27T15:17:47+05:30" />
+
+    <link rel="" href="http://www.w3.org/1999/xhtml/vocab">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+
+    <meta name="google-site-verification" content="mzT3E1XC-QkPimp0bsCryMYWPWdrmmBVhWmuOVMMWOw" />
+
+    <title>Café Coffee Day | A Lot Can Happen Over Coffee</title>
+
+    <link type="text/css" rel="stylesheet" href="https://www.cafecoffeeday.com/sites/default/files/css/css_y5V-74fl2u3TPnO7Vzl0srF2_LEAmcANj4_-6qPJyxk.css" media="all" />
+
+    <link type="text/css" rel="stylesheet" href="https://www.cafecoffeeday.com/sites/default/files/css/css_lhZ2r95cVv6XPZeCq2neqJ2WkJfOx4FGwB5NFslhk94.css" media="all" />
+
+    <link type="text/css" rel="stylesheet" href="https://www.cafecoffeeday.com/sites/default/files/css/css_YMAnEt-3StLOT1XX1RI4RtLD55xvLJEZVQJGRN4lxC0.css" media="all" />
+
+    <link type="text/css" rel="stylesheet" href="https://www.cafecoffeeday.com/sites/default/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="all" />
+
+    <script>
+
+        var site_url = 'https://www.cafecoffeeday.com/';
+
+        console.log("site_url" + site_url);
+
+        var theme_url = 'https://www.cafecoffeeday.com/sites/all/themes/ccd/';
+
+        var userSession = "";
+
+        var ipAddress = '49.37.34.216';
+
+        var offerId = 0;
+
+    </script>
+
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+    <meta content="974881795572-lru08ra80pl4f6h18d37cka54bheehib.apps.googleusercontent.com" name="google-signin-client_id">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-746673908"></script>
+
+    <script src="https://www.cafecoffeeday.com/sites/default/files/js/js_xvYJgU6LChHqbcSh4y1AvdXfD5QBIwT3GVGVUeuksbM.js"></script>
+
+    <script src="https://www.cafecoffeeday.com/sites/default/files/js/js_oZD9-WvfiElJ5KPavqu9ZAQiZcfWlzNCzxFHpedR9dI.js"></script>
+
+    <script src="https://www.cafecoffeeday.com/sites/default/files/js/js_dO7TqKySr1v9SWQHDpvl17RG-6gqRbUtZZdz2HlFbOQ.js"></script>
+
+    <script>
+
+        jQuery.extend(Drupal.settings, {
+
+            "basePath": "\/",
+
+            "pathPrefix": "",
+
+            "ajaxPageState": {
+
+                "theme": "ccd",
+
+                "theme_token": "wlKtRRO6Ef3ak2alh2evfPugjtPimqPgEuE8eG4frsE",
+
+                "js": {
+
+                    "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1,
+
+                    "misc\/jquery.once.js": 1,
+
+                    "misc\/drupal.js": 1,
+
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1,
+
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js": 1,
+
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js": 1,
+
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js": 1,
+
+                    "sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete_jqueryui.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/modernizr.custom.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery-2.2.0.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery-ui.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/owl.carousel.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.mousewheel-3.0.6.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.mCustomScrollbar.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.waypoints.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/sticky.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.dlmenu.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.validate.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/additional-methods.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/custom.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/signUpFB.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/googleSignUp.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/slick.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.ajaxfileupload.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/jquery.rwdImageMaps.min.js": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/js\/desktopNotification.js": 1
+
+                },
+
+                "css": {
+
+                    "modules\/system\/system.menus.css": 1,
+
+                    "modules\/system\/system.messages.css": 1,
+
+                    "modules\/system\/system.theme.css": 1,
+
+                    "misc\/ui\/jquery.ui.core.css": 1,
+
+                    "misc\/ui\/jquery.ui.theme.css": 1,
+
+                    "misc\/ui\/jquery.ui.menu.css": 1,
+
+                    "misc\/ui\/jquery.ui.autocomplete.css": 1,
+
+                    "sites\/all\/modules\/ckeditor\/css\/ckeditor.css": 1,
+
+                    "sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css": 1,
+
+                    "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+
+                    "sites\/all\/modules\/panels\/css\/panels.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/bootstrap.min.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/owl.carousel.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/ionicons.min.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/jquery-ui.min.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/jquery.mCustomScrollbar.min.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/component.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/style.css": 1,
+
+                    "sites\/all\/themes\/ccd\/assets\/css\/slick.css": 1,
+
+                    "sites\/all\/themes\/ccd\/system.menus.css": 1,
+
+                    "sites\/all\/themes\/ccd\/system.messages.css": 1,
+
+                    "sites\/all\/themes\/ccd\/system.theme.css": 1,
+
+                    "sites\/all\/themes\/ccd\/css\/styles.css": 1
+
+                }
+
+            },
+
+            "urlIsAjaxTrusted": {
+
+                "\/search\/node": true,
+
+                "\/": true
+
+            }
+
+        });
+
+    </script>
+
+    <script src="https://www.cafecoffeeday.com/sites/all/themes/ccd//assets/js/new_custom.js"></script>
+
+    <Meta name="robots" content="noydir" />
+
+    <Meta name="robots" content="noodp" />
+
+    <link rel="alternate" href="https://www.cafecoffeeday.com/" hreflang="en-in" />
+
+    <link rel="alternate" href="https://www.cafecoffeeday.com/" hreflang="x-default" />
+
+    <script>
+
+        (function(w, d, s, l, i) {
+
+            w[l] = w[l] || [];
+
+            w[l].push({
+
+                'gtm.start': new Date().getTime(),
+
+                event: 'gtm.js'
+
+            });
+
+            var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s),
+
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+
+            j.async = true;
+
+            j.src =
+
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+
+            f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-W8KNLGB');
+
+    </script>
+
+</head>
+
+​
+
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-769 node-type-page"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8KNLGB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <noscript><img height="1" width="1" alt="facebook" title="" src="https://www.facebook.com/tr?id=522822527889659&ev=PageView&noscript=1"/> </noscript>
+
+    <div
+
+        id="page-wrapper">
+
+        <div id="dl-menu" class="dl-menuwrapper"> <button><span class="mob-button-line"></span> </button>
+
+            <div class="mob-brand-logo trans-x"> <a href="https://www.cafecoffeeday.com/"><img src="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/common/logo.png" alt="Café Coffee Day Logo" title="Café Coffee Day Logo"></a></div>
+
+     </div>
